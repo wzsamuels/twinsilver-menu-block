@@ -55,7 +55,7 @@ export default function Edit({ attributes, setAttributes }) {
 			<button
 				className="lg:hidden px-4 py-2">
 			&#9776; {/* Hamburger Icon */}
-		</button>n
+		</button>
 		<div className='hidden lg:flex'>
 			{links.map((link, index) => (
 				<div key={index} className="link-item px-4 py-2 mx-1">
