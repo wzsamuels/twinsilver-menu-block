@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "twinsilver/menu-block",
+  "version": "0.1.0",
+  "title": "Twin Silver Menu Block",
+  "category": "widgets",
+  "icon": "admin-home",
+  "description": "A responsive menu bar for navigational links.",
+  "example": {},
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    }
+  },
+  "attributes": {
+    "links": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "twinsilver-menu-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:../build/index.css",
+    "file:./style-index.css"
+  ],
+  "viewScript": "file:./view.js"
+}
