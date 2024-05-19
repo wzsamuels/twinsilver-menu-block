@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.hamburger-button {
-  cursor: pointer; /* makes it clear it's clickable */
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -37,4 +32,8 @@
 
 .menu-sidebar.open {
   right: 0; /* Slide into view */
+}
+
+.menu-link:hover::after {
+  background-color: var(--hover-after-bg-color);
 }
