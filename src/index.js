@@ -20,6 +20,7 @@ import './input.css';
 import Edit from './edit';
 import save from './save';
 import metadata from './block.json';
+import "./store"
 
 /**
  * Every block starts by registering a new block type definition.

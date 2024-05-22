@@ -566,20 +566,8 @@ video {
   position: relative;
 }
 
-.bottom-\[-1em\] {
-  bottom: -1em;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mx-1 {
@@ -620,25 +608,8 @@ video {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -665,22 +636,14 @@ video {
   text-decoration-line: none;
 }
 
-.opacity-0 {
-  opacity: 0;
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .overlay {
@@ -722,8 +685,22 @@ video {
   /* Slide into view */
 }
 
-.menu-link:hover::after {
+.menu-link-style:hover::after {
   background-color: var(--hover-after-bg-color);
+}
+
+.menu-item.has-submenu::after {
+  content: '▼';
+  /* Arrow icon */
+  margin-left: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.menu-arrow {
+  margin-left: 5px;
+  font-size: 12px;
+  vertical-align: middle;
 }
 
 .after\:absolute::after {
@@ -771,10 +748,6 @@ video {
   transition-duration: 150ms;
 }
 
-.hover\:opacity-100:hover {
-  opacity: 1;
-}
-
 .after\:hover\:h-\[2px\]:hover::after {
   content: var(--tw-content);
   height: 2px;
@@ -787,5 +760,9 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .group:hover .lg\:group-hover\:block {
+    display: block;
   }
 }

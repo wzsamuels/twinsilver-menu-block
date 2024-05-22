@@ -18,7 +18,41 @@
 	"attributes": {
 		"links": {
 			"type": "array",
-			"default": []
+			"default": [],
+			"source": "query",
+			"selector": ".menu-item",
+			"query": {
+				"text": {
+					"type": "string",
+					"source": "text",
+					"selector": ".menu-link"
+				},
+				"url": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "href",
+					"selector": ".menu-link"
+				},
+				"subLinks": {
+					"type": "array",
+					"default": [],
+					"source": "query",
+					"selector": ".submenu-item",
+					"query": {
+						"text": {
+							"type": "string",
+							"source": "text",
+							"selector": ".submenu-link"
+						},
+						"url": {
+							"type": "string",
+							"source": "attribute",
+							"attribute": "href",
+							"selector": ".submenu-link"
+						}
+					}
+				}
+			}
 		},
 		"linkColor": {
 			"type": "string",

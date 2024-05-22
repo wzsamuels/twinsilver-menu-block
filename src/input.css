@@ -34,6 +34,19 @@
   right: 0; /* Slide into view */
 }
 
-.menu-link:hover::after {
+.menu-link-style:hover::after {
   background-color: var(--hover-after-bg-color);
+}
+
+.menu-item.has-submenu::after {
+  content: '▼'; /* Arrow icon */
+  margin-left: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.menu-arrow {
+  margin-left: 5px;
+  font-size: 12px;
+  vertical-align: middle;
 }
